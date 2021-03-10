@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #f2f3f5;
+  --text: #1d1d1d;
+  --text-hover: #2326c2;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+
+  font-family: 'Merriweather', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}

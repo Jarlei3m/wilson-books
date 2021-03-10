@@ -1,0 +1,49 @@
+.navbarContainer {
+  margin: 0 auto;
+  width: 100vw;
+  background-color: white;
+}
+
+.navbar {
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 100%;
+  max-width: 67.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pageLinks li,
+.socialLinks li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageLinks li {
+  gap: 1.8rem;
+  text-transform: capitalize;
+}
+
+.socialLinks li {
+  gap: 1.2rem;
+}
+
+.pageLinks li ul a,
+.socialLinks li ul svg {
+  color: var(--text);
+  font-weight: 400;
+  transition: color 0.2s ease-in-out;
+}
+
+.socialLinks li ul svg {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.pageLinks li ul a:hover,
+.socialLinks li ul svg:hover {
+  color: var(--text-hover);
+}
