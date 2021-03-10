@@ -1,3 +1,11 @@
+import { Books } from '../components/Books';
+import { Author } from '../components/Author';
+
 export default function Home() {
-  return <h1>Home page</h1>;
+  return (
+    <>
+      <Books />
+      <Author />
+    </>
+  );
 }

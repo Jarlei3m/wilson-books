@@ -1,0 +1,107 @@
+.container {
+  margin: 0rem auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.booksContainer {
+  /* margin: 0 auto; */
+  width: 100%;
+  height: 28rem;
+  background-color: var(--black);
+  overflow: visible;
+  transform: translateY(50%);
+
+  position: relative;
+}
+
+.book {
+  margin: 12rem auto 0 auto;
+  max-width: 64.5rem;
+
+  transform: translateY(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 3rem;
+}
+
+.book img {
+  justify-self: right;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+}
+
+.descriptionContainer div:nth-child(1) {
+  margin-bottom: 10rem;
+}
+
+.descriptionContainer h1 {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.descriptionContainer small {
+  font-size: 1.2rem;
+}
+
+.descriptionContainer p {
+  color: var(--white);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+.descriptionContainer button {
+  background-color: var(--black);
+  border: 1px solid var(--white);
+  color: var(--white);
+  width: 10rem;
+  height: 3rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  outline: none;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.descriptionContainer button:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.carousellBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+
+  position: absolute;
+  bottom: 0;
+  justify-self: center;
+  width: 100%;
+  height: 2rem;
+  transform: translateY(-3.6rem);
+}
+
+.carousellBtns div {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--background-carousell);
+
+  transition: all 0.2s ease-in-out;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.carousellBtns div:hover {
+  transform: scale(1.2);
+  background-color: var(--background);
+}

@@ -1,7 +1,7 @@
 .navbarContainer {
   margin: 0 auto;
   width: 100vw;
-  background-color: white;
+  background-color: var(--white);
 }
 
 .navbar {
