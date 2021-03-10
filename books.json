@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "image": "https://static.wixstatic.com/media/a5415c_95fc58e060b14f10acd52ca2f370a942~mv2.jpeg/v1/fill/w_395,h_593,al_c,q_80,usm_0.66_1.00_0.01/WhatsApp%20Image%202020-12-07%20at%2010_57_50_jp.webp",
+    "title": "O mais recente lançamento - A Nova Ordem Do Mal",
+    "author": "Wilson Lassarote",
+    "description": "Já disponível para venda!",
+    "amount": 80,
+    "price": 28,
+    "link": "https://www.amazon.com.br/NOVA-ORDEM-DO-MAL/dp/650011292X/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=a+nova+ordem+do+mal&qid=1615412809&sr=8-1"
+  },
+  {
+    "id": 1,
+    "image": "https://static.wixstatic.com/media/a5415c_e2ed337e6438411c8d8374af945eafe1~mv2.jpg/v1/fill/w_395,h_592,al_c,q_80,usm_0.66_1.00_0.01/vortex-capa-img_jfif.webp",
+    "title": "Vortex - A Revelação",
+    "author": "Wilson Lassarote",
+    "description": "Poucas unidades em estoque, não perca!",
+    "amount": 80,
+    "price": 22,
+    "link": "https://www.amazon.com.br/VORTEX-REVELA%C3%87%C3%83O-WILSON-LASSAROTE/dp/856890453X/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Vortex+-+A+Revela%C3%A7%C3%A3o&qid=1615412845&sr=8-1"
+  },
+  {
+    "id": 2,
+    "image": "https://static.wixstatic.com/media/a5415c_90255bbe11a24bd59f9a17c0a7996ddd~mv2.jpg/v1/fill/w_395,h_623,al_c,lg_1,q_80/inca.webp",
+    "title": "Além da Ponte Inca",
+    "author": "Wilson Lassarote",
+    "description": "Poucas unidades em estoque, não perca!",
+    "amount": 80,
+    "price": 28,
+    "link": "https://www.amazon.com.br/Al%C3%A9m-ponte-Inca-Wilson-Lassarote-ebook/dp/B0131D6D9O/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=al%C3%A9m+da+ponte+inca&qid=1615412732&sr=8-1"
+  }
+]
