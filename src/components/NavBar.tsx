@@ -29,19 +29,22 @@ export function NavBar() {
         <div className={styles.socialLinks}>
           <li>
             <ul>
-              <Link href='https://www.facebook.com/profile.php?id=100011729761575'>
+              <a
+                target='_blank'
+                href='https://www.facebook.com/profile.php?id=100011729761575'
+              >
                 <FaFacebook />
-              </Link>
+              </a>
             </ul>
             <ul>
-              <Link href='/contato'>
+              <a target='_blank' href='https://www.instagram.com/tlassarote'>
                 <FaInstagram />
-              </Link>
+              </a>
             </ul>
             <ul>
-              <Link href='/contato'>
+              <a target='_blank' href='/contato'>
                 <FaWhatsapp />
-              </Link>
+              </a>
             </ul>
           </li>
         </div>
