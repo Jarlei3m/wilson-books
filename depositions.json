@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "name": "Daniela de Paula",
+    "date": "17 de setembro de 2014",
+    "message": "Fiquei completamente presa a leitura, muito interessante e inteligente. Super recomendo este livro, e garanto, ele vai prender sua atenção até o final."
+  },
+  {
+    "id": 1,
+    "name": "Lucas Ribeiro",
+    "date": "02 de dezembro de 2020",
+    "message": "Livro chegou em ótimas condições. E sobre o autor, o que podemos fazer é agradecer por esse excelente escritor, e ainda por cima ser brasileiro."
+  },
+  {
+    "id": 2,
+    "name": "Bianca",
+    "date": "11 de agosto de 2020",
+    "message": "Uma leitura incrível, mágica, que mostra que a magia do mundo está aqui onde todos podem ver é só estender a mão para alcançá-la."
+  }
+]
