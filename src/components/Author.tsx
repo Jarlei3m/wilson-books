@@ -1,10 +1,13 @@
 import React from 'react';
 import styles from '../styles/components/AuthorContainer.module.css';
+import { AuthorPhoto } from './AuthorPhoto';
+import { AuthorAbout } from './AuthorAbout';
 
 export function Author() {
   return (
-    <div className={styles.AuthorContainer}>
-      <h2>autor component</h2>
-    </div>
+    <section className={styles.AuthorContainer}>
+      <AuthorPhoto />
+      <AuthorAbout />
+    </section>
   );
 }
