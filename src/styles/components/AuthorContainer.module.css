@@ -1,2 +1,8 @@
 .AuthorContainer {
+  /* transform: translateY(-0.7rem); */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  overflow: hidden;
 }

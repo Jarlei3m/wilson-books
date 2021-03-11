@@ -1,0 +1,28 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 12rem;
+  height: 100%;
+  /* justify-content: space-evenly; */
+}
+
+.aboutContainer h1 {
+  font-size: 2.3rem;
+  color: var(--black);
+}
+
+.underline {
+  width: 6.5rem;
+  height: 2px;
+  background: var(--black);
+
+  margin: 2rem 0;
+}
+
+.aboutContainer p {
+  color: var(--black);
+  line-height: 2.2;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
