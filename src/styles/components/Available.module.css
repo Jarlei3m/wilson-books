@@ -1,0 +1,131 @@
+.availableContainer {
+  margin: 6rem 0;
+  width: 100%;
+}
+
+.availableContainer article {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 61.25rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.availableContainer h1 {
+  font-size: 2.3rem;
+}
+
+.underline {
+  height: 2px;
+  width: 6.5rem;
+  background-color: var(--black);
+  margin: 2.5rem;
+}
+
+.bookContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.book,
+.book div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.book {
+  overflow: visible;
+}
+
+.book img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.book a {
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.book div h3 {
+  margin: 1rem 0 0.5rem 0;
+  line-height: 1.4;
+}
+
+.book div span {
+  color: var(--text-hover);
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+}
+
+.book button {
+  width: 18rem;
+  height: 2.5rem;
+
+  border: none;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 2px;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.book button:hover {
+  opacity: 0.8;
+}
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.95);
+
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-out;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.modal .postface {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal.active p {
+  color: var(--white);
+  line-height: 1.8;
+}
+
+.modal.active svg {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+
+  font-size: 2rem;
+  color: var(--white);
+  cursor: pointer;
+}

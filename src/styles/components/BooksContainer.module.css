@@ -15,13 +15,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 12rem;
+  margin-top: 16.5rem;
 
   position: relative;
 }
 
 .book {
-  margin: 12rem auto 0 auto;
+  margin: 16rem auto 0 auto;
   max-width: 61.25rem;
   opacity: 0;
 

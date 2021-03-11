@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import styles from '../styles/components/BooksContainer.module.css';
 import data from '../../books.json';
+import styles from '../styles/components/BooksContainer.module.css';
 
 export function Books() {
   const [books, setBooks] = useState(data);
