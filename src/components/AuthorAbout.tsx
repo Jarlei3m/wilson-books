@@ -8,8 +8,8 @@ export function AuthorAbout() {
       <div className={styles.underline}></div>
       <div>
         <p>
-          Wilson L.T. Lassarote nascido em 1966 numa pequena cidade do interior
-          do Rio de Janeiro chamada Valença. Médico cardiologista e escritor.
+          Wilson L.T. Lassarote nasci em 1966 numa pequena cidade do interior do
+          Rio de Janeiro chamada Valença. Sou médico cardiologista e escritor.
           Atualmente com 3 livros publicados. ​<br />
           <br />
           Como autor, acredito que um livro deve deixar marcas e ser agente de

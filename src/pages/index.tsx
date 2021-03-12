@@ -2,6 +2,8 @@ import { Books } from '../components/Books';
 import { Author } from '../components/Author';
 import { Available } from '../components/Available';
 import { Depositions } from '../components/Depositions';
+import { Contact } from '../components/Contact';
+import { Map } from '../components/Map';
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
       <Author />
       <Available />
       <Depositions />
+      <Contact />
+      <Map />
     </>
   );
 }

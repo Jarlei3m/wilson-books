@@ -2,6 +2,7 @@
   margin: 0rem auto;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 .booksContainer {
@@ -24,6 +25,7 @@
   margin: 16rem auto 0 auto;
   max-width: 61.25rem;
   opacity: 0;
+  visibility: hidden;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -37,6 +39,7 @@
 
 .book.activeSlide {
   opacity: 1;
+  visibility: visible;
   transform: translate3d(0, -60%, 0);
 }
 
