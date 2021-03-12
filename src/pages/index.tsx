@@ -4,6 +4,7 @@ import { Available } from '../components/Available';
 import { Depositions } from '../components/Depositions';
 import { Contact } from '../components/Contact';
 import { Map } from '../components/Map';
+import { Footer } from '../components/Footer';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Depositions />
       <Contact />
       <Map />
+      <Footer />
     </>
   );
 }

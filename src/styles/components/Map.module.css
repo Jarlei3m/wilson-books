@@ -1,6 +1,7 @@
 .mapContainer {
   width: 100vw;
   height: 50rem;
+  overflow: hidden;
 }
 
 .mapContainer iframe {
