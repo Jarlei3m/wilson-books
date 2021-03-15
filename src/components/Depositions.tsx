@@ -10,7 +10,7 @@ export function Depositions() {
   useEffect(() => {
     const lastPosition = depositions.length;
     if (position < 0) {
-      setPosition(lastPosition);
+      setPosition(lastPosition - 1);
     }
     if (position === lastPosition) {
       setPosition(0);
