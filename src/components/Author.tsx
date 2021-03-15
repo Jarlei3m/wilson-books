@@ -5,7 +5,7 @@ import { AuthorAbout } from './AuthorAbout';
 
 export function Author() {
   return (
-    <section className={styles.AuthorContainer}>
+    <section id='autor' className={styles.AuthorContainer}>
       <AuthorPhoto />
       <AuthorAbout />
     </section>

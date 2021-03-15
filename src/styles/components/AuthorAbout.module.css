@@ -1,14 +1,15 @@
 .aboutContainer {
   display: flex;
   flex-direction: column;
-  padding: 10rem 12rem;
+  justify-content: center;
+  padding: 0rem 12rem;
   height: 100%;
-  /* justify-content: space-evenly; */
 }
 
 .aboutContainer h1 {
   font-size: 2.3rem;
   color: var(--black);
+  align-self: left;
 }
 
 .underline {

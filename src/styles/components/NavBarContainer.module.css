@@ -8,7 +8,7 @@
 
 .navbar {
   margin: 0 auto;
-  padding: 2.5rem 0;
+  padding: 1.6rem 0;
   width: 100%;
   max-width: 67.5rem;
 
@@ -37,7 +37,7 @@
 .socialLinks li ul svg {
   color: var(--text);
   font-weight: 400;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .socialLinks li ul svg {
@@ -47,5 +47,9 @@
 
 .pageLinks li ul a:hover,
 .socialLinks li ul svg:hover {
+  color: var(--text-hover);
+}
+
+.pageLinks li ul.active a {
   color: var(--text-hover);
 }

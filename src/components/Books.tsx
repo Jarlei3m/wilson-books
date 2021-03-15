@@ -25,7 +25,7 @@ export function Books() {
   }, [position]);
 
   return (
-    <section className={styles.container}>
+    <section id='home' className={styles.container}>
       <div className={styles.booksContainer}>
         {books.map((book, bookIndex) => {
           const { image, title, author, description, link } = book;

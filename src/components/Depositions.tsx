@@ -26,7 +26,7 @@ export function Depositions() {
   }, [position]);
 
   return (
-    <section className={styles.container}>
+    <section id='depoimentos' className={styles.container}>
       <header>
         <h1>Depoimentos</h1>
         <div className={styles.underline}></div>

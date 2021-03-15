@@ -12,7 +12,7 @@ export function Available() {
   }
 
   return (
-    <section className={styles.availableContainer}>
+    <section id='livros' className={styles.availableContainer}>
       <article>
         <h1>Livros disponíveis para compra imediata</h1>
         <div className={styles.underline}></div>

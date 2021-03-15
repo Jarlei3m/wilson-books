@@ -3,7 +3,7 @@ import styles from '../styles/components/Contact.module.css';
 
 export function Contact() {
   return (
-    <section className={styles.contactContainer}>
+    <section id='contato' className={styles.contactContainer}>
       <h1>Gostaria de retirar pessoalmente?</h1>
       <div className={styles.underline}></div>
       <p>Como me encontrar</p>

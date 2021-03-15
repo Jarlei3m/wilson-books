@@ -1,28 +1,52 @@
-import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
 import styles from '../styles/components/NavBarContainer.module.css';
-import { FaFacebook, FaWhatsapp, FaInstagram } from 'react-icons/fa';
 
 export function NavBar() {
+  const [pageSection, setPageSection] = useState(0);
+
+  const handleScroll = () => {
+    const pageSection = Math.floor(window.scrollY / (window.innerHeight - 36));
+    setPageSection(pageSection);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
   return (
     <header className={styles.navbarContainer}>
       <nav className={styles.navbar}>
         <div className={styles.pageLinks}>
           <li>
-            <ul>
-              <Link href='/'>Home</Link>
+            <ul className={pageSection === 0 ? `${styles.active}` : null}>
+              <Link href='/#home' replace>
+                Home
+              </Link>
             </ul>
-            <ul>
-              <Link href='/autor'>Autor</Link>
+            <ul className={pageSection === 1 ? `${styles.active}` : null}>
+              <Link href='/#autor' replace>
+                Autor
+              </Link>
             </ul>
-            <ul>
-              <Link href='/livros'>Livros</Link>
+            <ul className={pageSection === 2 ? `${styles.active}` : null}>
+              <Link href='/#livros' replace>
+                Livros
+              </Link>
             </ul>
-            <ul>
-              <Link href='/depoimentos'>Depoimentos</Link>
+            <ul className={pageSection === 3 ? `${styles.active}` : null}>
+              <Link href='/#depoimentos' replace>
+                Depoimentos
+              </Link>
             </ul>
-            <ul>
-              <Link href='/contato'>Contato</Link>
+            <ul className={pageSection > 3 ? `${styles.active}` : null}>
+              <Link href='/#contato' replace>
+                Contato
+              </Link>
             </ul>
           </li>
         </div>
@@ -42,8 +66,17 @@ export function NavBar() {
               </a>
             </ul>
             <ul>
-              <a target='_blank' href='/contato'>
+              <a
+                target='_blank'
+                href='https://api.whatsapp.com/send?1=pt_BR&phone=5524999616398
+&text=Olá Wilson, tenho interesse no seu Livro. Vamos conversar?'
+              >
                 <FaWhatsapp />
+              </a>
+            </ul>
+            <ul>
+              <a href='mailto:wltlassa@bol.com.br'>
+                <HiOutlineMail />
               </a>
             </ul>
           </li>

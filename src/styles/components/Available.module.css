@@ -1,10 +1,10 @@
 .availableContainer {
-  margin: 6rem 0;
+  margin-bottom: 5rem;
   width: 100%;
 }
 
 .availableContainer article {
-  margin: 0 auto;
+  margin: 6rem auto;
   width: 100%;
   max-width: 61.25rem;
 
@@ -22,7 +22,7 @@
   height: 2px;
   width: 6.5rem;
   background-color: var(--black);
-  margin: 2.5rem;
+  margin: 3.5rem;
 }
 
 .bookContainer {

@@ -9,12 +9,12 @@ export function Footer() {
       <p>© 2021 Wilson Lassarote - Todos os direitos reservados </p>
 
       <div>
-        <span>
+        <a href='tel: +5524999616398'>
           <HiPhone /> 24 999616398
-        </span>
-        <span>
+        </a>
+        <a href='mailto:wltlassa@bol.com.br'>
           <HiOutlineMail /> wltlassa@bol.com.br
-        </span>
+        </a>
       </div>
     </footer>
   );
