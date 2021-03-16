@@ -60,6 +60,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: left;
+  max-width: 75%;
 }
 
 .descriptionContainer div:nth-child(1) {
@@ -130,4 +131,85 @@
 .carousellBtns .btnActive {
   transform: scale(1.2);
   background-color: var(--background);
+}
+
+@media (max-width: 980px) {
+  .book img {
+    width: 90%;
+  }
+
+  .book {
+    margin: 12rem auto 0 auto;
+  }
+}
+
+@media (max-width: 880px) {
+  .book img {
+    width: 80%;
+  }
+
+  .book {
+    margin: 10rem auto 0 auto;
+  }
+}
+@media (max-width: 880px) {
+  .book img {
+    width: 75%;
+  }
+
+  .book {
+    margin: 8rem auto 0 auto;
+  }
+}
+
+@media (max-width: 490px) {
+  .book img {
+    width: 65%;
+  }
+
+  .book {
+    margin: 4rem auto 0 auto;
+  }
+
+  .booksContainer {
+    margin-top: 26rem;
+    height: 22rem;
+  }
+
+  .descriptionContainer div:nth-child(1) {
+    margin-bottom: 4rem;
+  }
+
+  .descriptionContainer h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .descriptionContainer small {
+    font-size: 1rem;
+  }
+
+  .descriptionContainer p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .descriptionContainer button {
+    width: 7.5rem;
+    height: 2.2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .booksContainer {
+    height: 20rem;
+  }
+}
+
+@media (max-width: 325px) {
+  .booksContainer {
+    margin-top: 24rem;
+    height: 18rem;
+  }
 }

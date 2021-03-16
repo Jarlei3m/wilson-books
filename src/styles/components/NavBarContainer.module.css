@@ -8,7 +8,7 @@
 
 .navbar {
   margin: 0 auto;
-  padding: 1.6rem 0;
+  padding: 1.6rem;
   width: 100%;
   max-width: 67.5rem;
 
@@ -53,3 +53,10 @@
 .pageLinks li ul.active a {
   color: var(--text-hover);
 }
+/* 
+@media (max-width: 767px) {
+  .navbarContainer {
+    opacity: 0;
+    visibility: hidden;
+  }
+} */

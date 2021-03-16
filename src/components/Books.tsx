@@ -3,8 +3,12 @@ import data from '../../books.json';
 import styles from '../styles/components/BooksContainer.module.css';
 
 export function Books() {
-  const [books, setBooks] = useState(data);
+  const [books, setBooks] = useState([]);
   const [position, setPosition] = useState(0);
+
+  useEffect(() => {
+    setBooks(data);
+  }, []);
 
   useEffect(() => {
     const lastPosition = books.length;

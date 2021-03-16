@@ -1,15 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../styles/components/Available.module.css';
-import books from '../../books.json';
+import data from '../../books.json';
 import { AiOutlineClose } from 'react-icons/ai';
 
 export function Available() {
-  const [modal, setModal] = useState();
+  const [modal, setModal] = useState('');
+  const [books, setBooks] = useState([]);
 
   function handleModal(bookId) {
-    console.log(bookId);
     setModal(bookId);
   }
+
+  useEffect(() => {
+    setBooks(data);
+  }, []);
 
   return (
     <section id='livros' className={styles.availableContainer}>
@@ -54,7 +58,7 @@ export function Available() {
                 >
                   <article className={styles.postface}>
                     <img src={image} alt={smallTitle} />
-                    <p>
+                    <div>
                       {postface.split('<br />').map((item, index) => {
                         return (
                           <p key={index}>
@@ -64,7 +68,7 @@ export function Available() {
                           </p>
                         );
                       })}
-                    </p>
+                    </div>
                     <AiOutlineClose onClick={() => handleModal(null)} />
                   </article>
                 </div>
