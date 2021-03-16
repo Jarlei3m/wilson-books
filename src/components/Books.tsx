@@ -1,32 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import data from '../../books.json';
+import React, { useContext, useEffect, useState } from 'react';
+import { CarousellContext } from '../context/CarousellContext';
+// import data from '../../books.json';
 import styles from '../styles/components/BooksContainer.module.css';
 
 export function Books() {
-  const [books, setBooks] = useState([]);
-  const [position, setPosition] = useState(0);
-
-  useEffect(() => {
-    setBooks(data);
-  }, []);
-
-  useEffect(() => {
-    const lastPosition = books.length;
-    if (position < 0) {
-      setPosition(lastPosition);
-    }
-    if (position === lastPosition) {
-      setPosition(0);
-    }
-  }, [position, books]);
-
-  useEffect(() => {
-    let carousell = setInterval(() => {
-      setPosition(position + 1);
-    }, 6000);
-
-    return () => clearInterval(carousell);
-  }, [position]);
+  const { books, handleBookPosition, bookPosition } = useContext(
+    CarousellContext
+  );
 
   return (
     <section id='home' className={styles.container}>
@@ -37,10 +17,10 @@ export function Books() {
             <div
               key={bookIndex}
               className={
-                bookIndex === position
+                bookIndex === bookPosition
                   ? `${styles.book} ${styles.activeSlide}`
-                  : bookIndex === position - 1 ||
-                    (position === 0 && bookIndex === books.length - 1)
+                  : bookIndex === bookPosition - 1 ||
+                    (bookPosition === 0 && bookIndex === books.length - 1)
                   ? `${styles.book} ${styles.prevSlide}`
                   : `${styles.book} ${styles.nextSlide}`
               }
@@ -63,16 +43,16 @@ export function Books() {
         })}
         <nav className={styles.carousellBtns}>
           <div
-            className={position === 0 ? `${styles.btnActive}` : null}
-            onClick={() => setPosition(0)}
+            className={bookPosition === 0 ? `${styles.btnActive}` : null}
+            onClick={() => handleBookPosition(0)}
           ></div>
           <div
-            className={position === 1 ? `${styles.btnActive}` : null}
-            onClick={() => setPosition(1)}
+            className={bookPosition === 1 ? `${styles.btnActive}` : null}
+            onClick={() => handleBookPosition(1)}
           ></div>
           <div
-            className={position === 2 ? `${styles.btnActive}` : null}
-            onClick={() => setPosition(2)}
+            className={bookPosition === 2 ? `${styles.btnActive}` : null}
+            onClick={() => handleBookPosition(2)}
           ></div>
         </nav>
       </div>

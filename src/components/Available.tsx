@@ -13,7 +13,7 @@ export function Available() {
 
   useEffect(() => {
     setBooks(data);
-  }, []);
+  });
 
   return (
     <section id='livros' className={styles.availableContainer}>
