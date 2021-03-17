@@ -12,6 +12,7 @@
   --background-carousell: #666666;
   --text: #1d1d1d;
   --text-hover: #2326c2;
+  --green: #4cd62b;
 }
 
 html {
@@ -38,27 +39,27 @@ a {
     font-size: 87.5%;
   }
 }
+/* 
+@media (max-width: 980px) {
+  html {
+    font-size: 81.25%;
+  }
+} */
 
 @media (max-width: 980px) {
   html {
     font-size: 81.25%;
   }
 }
-
-@media (max-width: 880px) {
-  html {
-    font-size: 68.75%;
-  }
-}
-
+/* 
 @media (max-width: 780px) {
   html {
     font-size: 62.5%;
   }
-}
+} */
 
 @media (max-width: 620px) {
   html {
-    font-size: 50%;
+    font-size: 62.5%;
   }
 }

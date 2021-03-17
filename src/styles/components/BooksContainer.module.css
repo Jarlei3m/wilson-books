@@ -1,37 +1,53 @@
 .container {
   margin: 0rem auto;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
 }
 
 .booksContainer {
   /* margin: 0 auto; */
   width: 100%;
-  height: 28.5rem;
-  background-color: var(--black);
+  /* height: 28.5rem; */
+  /* background-color: var(--black); */
   overflow: visible;
   /* transform: translateY(60%); */
 
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30.5rem;
+  /* margin-top: 30.5rem; */
 
-  position: relative;
+  /* position: relative; */
+}
+
+.backgroundHalf {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 45%;
+  background-color: var(--black);
+  z-index: -1;
 }
 
 .book {
-  margin: 16rem auto 0 auto;
+  margin: 0 auto;
   max-width: 61.25rem;
   opacity: 0;
   visibility: hidden;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  transform: translate3d(0, -60%, 0);
+  transform: translate3d(0, 0, 0);
 
-  gap: 3rem;
+  gap: 4rem;
 
   position: absolute;
   transition: all 0.8s ease-in-out;
@@ -40,15 +56,15 @@
 .book.activeSlide {
   opacity: 1;
   visibility: visible;
-  transform: translate3d(0, -60%, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .book.prevSlide {
-  transform: translate3d(-100%, -60%, 0);
+  transform: translate3d(-100%, 0, 0);
 }
 
 .book.nextSlide {
-  transform: translate3d(100%, -60%, 0);
+  transform: translate3d(100%, 0, 0);
 }
 
 .book img {
@@ -58,19 +74,20 @@
 .descriptionContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: left;
-  max-width: 75%;
+  max-width: 90%;
+  gap: 14rem;
 }
 
 .descriptionContainer div:nth-child(1) {
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
 }
 
 .descriptionContainer h1 {
   font-size: 2rem;
   line-height: 1.5;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .descriptionContainer small {
@@ -93,6 +110,7 @@
   border-radius: 4px;
   font-size: 0.9rem;
   outline: none;
+  margin-bottom: 0.2rem;
 
   transition: all 0.2s ease-in-out;
 }
@@ -109,6 +127,7 @@
   gap: 1.8rem;
 
   position: absolute;
+
   bottom: 0;
   justify-self: center;
   width: 100%;
@@ -133,51 +152,64 @@
   background-color: var(--background);
 }
 
+/* REPONSIVE */
 @media (max-width: 980px) {
   .book img {
-    width: 90%;
-  }
-
-  .book {
-    margin: 12rem auto 0 auto;
+    width: 98%;
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 768px) {
+  .book {
+    max-width: 58rem;
+    gap: 2rem;
+  }
+
+  .book img {
+    width: 94%;
+  }
+
+  .descriptionContainer {
+    gap: 12rem;
+  }
+}
+/* MOBILE */
+@media (max-width: 425px) {
+  .book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate3d(0, 5%, 0);
+
+    gap: 1rem;
+  }
+
+  .book.activeSlide {
+    transform: translate3d(0, 5%, 0);
+  }
+
+  .book.prevSlide {
+    transform: translate3d(-100%, 5%, 0);
+  }
+
+  .book.nextSlide {
+    transform: translate3d(100%, 5%, 0);
+  }
+
   .book img {
     width: 80%;
   }
 
-  .book {
-    margin: 10rem auto 0 auto;
-  }
-}
-@media (max-width: 880px) {
-  .book img {
-    width: 75%;
-  }
-
-  .book {
-    margin: 8rem auto 0 auto;
-  }
-}
-
-@media (max-width: 490px) {
-  .book img {
-    width: 65%;
-  }
-
-  .book {
-    margin: 4rem auto 0 auto;
-  }
-
-  .booksContainer {
-    margin-top: 26rem;
-    height: 22rem;
-  }
-
-  .descriptionContainer div:nth-child(1) {
-    margin-bottom: 4rem;
+  .descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 70%;
+    gap: 2rem;
+    color: var(--white);
   }
 
   .descriptionContainer h1 {
@@ -185,31 +217,13 @@
     line-height: 1.2;
   }
 
-  .descriptionContainer small {
-    font-size: 1rem;
+  .carousellBtns {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .descriptionContainer p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
-
-  .descriptionContainer button {
-    width: 7.5rem;
-    height: 2.2rem;
-  }
-}
-
-@media (max-width: 375px) {
-  .booksContainer {
-    height: 20rem;
-  }
-}
-
-@media (max-width: 325px) {
-  .booksContainer {
-    margin-top: 24rem;
-    height: 18rem;
+    font-size: 1.4rem;
   }
 }
