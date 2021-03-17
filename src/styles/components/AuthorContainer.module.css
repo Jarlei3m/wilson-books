@@ -126,4 +126,8 @@
   .aboutContainer .underline {
     align-self: center;
   }
+
+  .aboutContainer div:last-child {
+    overflow: hidden;
+  }
 }
