@@ -1,9 +1,129 @@
 .AuthorContainer {
-  /* transform: translateY(-0.7rem); */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* display: flex; */
   align-items: center;
-  /* justify-self: center; */
   overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+/* IMAGE */
+.photoContainer img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100vh;
+  display: block;
+}
+
+/* ABOUT */
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 28rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.aboutContainer h1,
+.aboutContainer .underline {
+  align-self: flex-start;
+}
+
+.aboutContainer h1 {
+  font-size: 2.3rem;
+  color: var(--text);
+}
+
+.underline {
+  width: 6.5rem;
+  height: 2px;
+  background: var(--black);
+
+  margin: 2rem 0;
+}
+
+.aboutContainer p {
+  color: var(--text);
+  line-height: 2.2;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1100px) {
+  .photoContainer img {
+    width: unset;
+    transform: translateX(-5%);
+  }
+}
+
+@media (max-width: 960px) {
+  .photoContainer img {
+    transform: translateX(-15%);
+  }
+
+  .aboutContainer {
+    max-width: 26rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .photoContainer img {
+    transform: translateX(-24%);
+  }
+}
+
+@media (max-width: 750px) {
+  .photoContainer img {
+    transform: translateX(-30%);
+  }
+  .aboutContainer {
+    max-width: 24rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .photoContainer img {
+    transform: translateX(-38%);
+  }
+  .aboutContainer {
+    max-width: 22rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .photoContainer img {
+    transform: translateX(-45%);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 425px) {
+  .AuthorContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photoContainer {
+    height: 60vh;
+  }
+
+  .photoContainer img {
+    height: 100%;
+    transform: unset;
+    width: 100%;
+  }
+
+  .aboutContainer {
+    max-width: 30rem;
+    margin: 2rem auto;
+  }
+
+  .aboutContainer h1,
+  .aboutContainer .underline {
+    align-self: center;
+  }
 }
