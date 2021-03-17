@@ -1,11 +1,12 @@
 .availableContainer {
-  margin-bottom: 5rem;
   width: 100%;
+  height: 100vh;
 }
 
 .availableContainer article {
-  margin: 6rem auto;
+  margin: 0 auto;
   width: 100%;
+  height: 100%;
   max-width: 61.25rem;
 
   display: flex;
@@ -40,9 +41,6 @@
   justify-content: center;
   flex-direction: column;
 }
-.book {
-  overflow: visible;
-}
 
 .book img {
   max-width: 100%;
@@ -52,7 +50,7 @@
   margin-right: auto;
 }
 
-.book a {
+.book a:first-child {
   box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
@@ -84,6 +82,7 @@
   opacity: 0.8;
 }
 
+/* MODAL */
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -100,8 +99,6 @@
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease-out;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .modal .postface {
@@ -122,10 +119,109 @@
 
 .modal.active svg {
   position: absolute;
-  top: 3rem;
-  right: 3rem;
+  top: 2rem;
+  right: 2rem;
 
   font-size: 2rem;
   color: var(--white);
   cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .bookContainer {
+    gap: 0.5rem;
+  }
+  .book a:first-child {
+    width: 90%;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* MODAL */
+  .availableContainer .postface {
+    max-width: 56rem;
+  }
+}
+
+@media (max-width: 730px) {
+  .availableContainer .postface {
+    max-width: 50rem;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 425px) {
+  .availableContainer h1 {
+    width: 30rem;
+    text-align: center;
+  }
+
+  .underline {
+    margin: 3rem;
+  }
+
+  .book {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .book a:first-child {
+    width: 30%;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  .bookContainer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .book button {
+    width: 16rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+  }
+
+  /* MODAL MOBILE */
+  .modal .postface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .postface img {
+    height: 40vh;
+  }
+
+  .modal.active p {
+    text-align: center;
+    width: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  .underline {
+    margin: 2.5rem;
+  }
+
+  .book {
+    gap: 3rem;
+  }
+
+  .postface img {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 320px) {
+  .book {
+    gap: 2rem;
+  }
+
+  .postface img {
+    height: 30vh;
+  }
 }
