@@ -43,6 +43,37 @@ export function NavBar() {
     <>
       {hasNavMenu ? (
         <header>
+          <div className={styles.socialLinks}>
+            <li>
+              <ul>
+                <a
+                  target='_blank'
+                  href='https://www.facebook.com/profile.php?id=100011729761575'
+                >
+                  <FaFacebook />
+                </a>
+              </ul>
+              <ul>
+                <a target='_blank' href='https://www.instagram.com/tlassarote'>
+                  <FaInstagram />
+                </a>
+              </ul>
+              <ul>
+                <a
+                  target='_blank'
+                  href='https://api.whatsapp.com/send?1=pt_BR&phone=5524999616398
+    &text=Olá Wilson, tenho interesse no seu Livro. Vamos conversar?'
+                >
+                  <FaWhatsapp />
+                </a>
+              </ul>
+              <ul>
+                <a href='mailto:wltlassa@bol.com.br'>
+                  <HiOutlineMail />
+                </a>
+              </ul>
+            </li>
+          </div>
           <nav
             className={
               isModalOpen

@@ -82,7 +82,7 @@
   width: 1.75rem;
   margin-bottom: 4px;
 
-  background-color: var(--black);
+  background-color: var(--text);
   transition: all 0.5s ease-in-out;
 }
 
@@ -91,6 +91,16 @@
     opacity: 0;
     visibility: 0;
     display: none;
+  }
+
+  .socialLinks {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+  }
+
+  .socialLinks li ul svg {
+    font-size: 1.6rem;
   }
 
   /* NAV MENU */

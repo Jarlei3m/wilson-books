@@ -38,9 +38,7 @@
   justify-content: center;
   gap: 2rem;
 
-  /* min-width: 38rem; */
   margin: 9rem 0;
-  /* position: relative; */
 }
 
 .deposition {
@@ -123,6 +121,7 @@
   align-items: center;
   gap: 1rem;
   height: 2rem;
+  width: 5rem;
 
   margin: 4rem 0;
 }
@@ -170,4 +169,48 @@
 
 .container svg:hover {
   color: var(--background);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .arrowRight svg {
+    right: 3rem;
+  }
+
+  .arrowLeft svg {
+    left: 3rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .container svg {
+    top: 52%;
+  }
+}
+
+@media (max-width: 500px) {
+  .arrowRight {
+    display: none;
+  }
+
+  .arrowLeft {
+    display: none;
+  }
+
+  .carousellBtns {
+    gap: 1.5rem;
+  }
+
+  .carousellBtns div {
+    height: 0.6rem;
+    width: 0.6rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .deposition {
+    max-width: 30rem;
+    padding: 1rem 3rem;
+  }
 }
