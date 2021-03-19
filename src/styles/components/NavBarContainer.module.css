@@ -74,7 +74,7 @@
 
   transition: all 0.5s ease-out;
   cursor: pointer;
-  z-index: 5;
+  z-index: 12;
 }
 
 .navMenu .btnLine {
@@ -94,7 +94,7 @@
   }
 
   .socialLinks {
-    position: absolute;
+    position: fixed;
     left: 2rem;
     top: 2rem;
     z-index: 5;
@@ -108,6 +108,22 @@
   .navMenuContainer {
     opacity: 1;
     visibility: visible;
+
+    background-color: transparent;
+    position: fixed;
+    height: 1rem;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transition: all 0.3s ease-in-out;
+    z-index: 4;
+  }
+
+  .navMenuContainer.showMenuBG {
+    background-color: var(--white);
+    height: 6rem;
+    opacity: 0.95;
   }
 
   .navMenu {
@@ -148,7 +164,7 @@
     transform: translateX(100%);
     transition: all 0.5s ease-out;
 
-    z-index: 4;
+    z-index: 10;
   }
 
   .menuModal.open {

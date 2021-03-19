@@ -8,6 +8,7 @@ export function NavBar() {
   const [pageSection, setPageSection] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [hasNavMenu, setHasNavMenu] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
 
   function handleModal() {
     setIsModalOpen(!isModalOpen);
@@ -16,6 +17,11 @@ export function NavBar() {
   const handleScroll = () => {
     const pageSection = Math.floor(window.scrollY / (window.innerHeight - 36));
     setPageSection(pageSection);
+    if (window.scrollY > 15) {
+      setIsScrolling(true);
+    } else {
+      setIsScrolling(false);
+    }
   };
 
   const handleResize = () => {
@@ -41,7 +47,13 @@ export function NavBar() {
   return (
     <>
       {hasNavMenu ? (
-        <header>
+        <header
+          className={
+            isScrolling
+              ? `${styles.navMenuContainer} ${styles.showMenuBG}`
+              : `${styles.navMenuContainer}`
+          }
+        >
           <div className={styles.socialLinks}>
             <li>
               <ul>
