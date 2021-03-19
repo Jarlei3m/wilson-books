@@ -43,7 +43,7 @@ export function Available() {
                 </a>
                 <div>
                   <h3>{smallTitle}</h3>
-                  <span>R$ {price},00</span>
+                  <span>R$ {price} + frete</span>
                   <a target='_blank' href={link}>
                     <button>Comprar agora</button>
                   </a>
