@@ -1,8 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react';
-import styles from '../styles/components/Depositions.module.css';
-import { RiArrowRightSLine, RiArrowLeftSLine } from 'react-icons/ri';
-import data from '../../depositions.json';
+import React, { useContext } from 'react';
+import { RiArrowLeftSLine, RiArrowRightSLine } from 'react-icons/ri';
 import { CarousellContext } from '../context/CarousellContext';
+import styles from '../styles/components/Depositions.module.css';
 
 export function Depositions() {
   const { depositions, handleDeposPosition, deposPosition } = useContext(

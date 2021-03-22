@@ -1,7 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { AiOutlineEyeInvisible } from 'react-icons/ai';
+import React, { useContext } from 'react';
 import { CarousellContext } from '../context/CarousellContext';
-// import data from '../../books.json';
 import styles from '../styles/components/BooksContainer.module.css';
 
 export function Books() {

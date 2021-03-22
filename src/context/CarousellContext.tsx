@@ -5,8 +5,8 @@ import deposData from '../../depositions.json';
 interface CarousellContextData {
   bookPosition: number;
   deposPosition: number;
-  books: any[];
-  depositions: any[];
+  books: Books[];
+  depositions: DepositionsProps[];
   handleBookPosition: (arrayBook: number) => void;
   handleDeposPosition: (arrayDepos: number) => void;
 }
@@ -15,11 +15,32 @@ interface CarousellProviderProps {
   children: ReactNode;
 }
 
+interface Books {
+  id: number;
+  image: string;
+  smallImage: string;
+  title: string;
+  smallTitle: string;
+  author: string;
+  description: string;
+  amount: number;
+  link: string;
+  price: string;
+  postface: string;
+}
+
+interface DepositionsProps {
+  message: string;
+  name: string;
+  date: string;
+  id: number;
+}
+
 export const CarousellContext = createContext({} as CarousellContextData);
 
 export function CarousellProvider({ children }: CarousellProviderProps) {
-  const [books, setBooks] = useState([]);
-  const [depositions, setDepositions] = useState([]);
+  const [books, setBooks] = useState<Books[]>([]);
+  const [depositions, setDepositions] = useState<DepositionsProps[]>([]);
   const [bookPosition, setBookPosition] = useState(0);
   const [deposPosition, setDeposPosition] = useState(0);
 
@@ -49,7 +70,7 @@ export function CarousellProvider({ children }: CarousellProviderProps) {
     return () => clearInterval(carousell);
   }, [bookPosition]);
 
-  function handleBookPosition(arrayBook) {
+  function handleBookPosition(arrayBook: number) {
     setBookPosition(arrayBook);
   }
 
@@ -74,7 +95,7 @@ export function CarousellProvider({ children }: CarousellProviderProps) {
     return () => clearInterval(carousell);
   }, [deposPosition]);
 
-  function handleDeposPosition(arrayDepos) {
+  function handleDeposPosition(arrayDepos: number) {
     setDeposPosition(arrayDepos);
   }
 

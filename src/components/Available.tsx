@@ -3,11 +3,21 @@ import styles from '../styles/components/Available.module.css';
 import data from '../../books.json';
 import { AiOutlineClose } from 'react-icons/ai';
 
-export function Available() {
-  const [modal, setModal] = useState('');
-  const [books, setBooks] = useState([]);
+interface Books {
+  id: number;
+  smallTitle: string;
+  smallImage: string;
+  image: string;
+  link: string;
+  price: string;
+  postface: string;
+}
 
-  function handleModal(bookId) {
+export function Available() {
+  const [modal, setModal] = useState(0);
+  const [books, setBooks] = useState<Books[]>([]);
+
+  function handleModal(bookId: number) {
     setModal(bookId);
   }
 
@@ -69,7 +79,7 @@ export function Available() {
                         );
                       })}
                     </div>
-                    <AiOutlineClose onClick={() => handleModal(null)} />
+                    <AiOutlineClose onClick={() => handleModal(0)} />
                   </article>
                 </div>
               </div>
