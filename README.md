@@ -34,7 +34,7 @@
 
 <div align="center">
   <img src="https://github.com/Jarlei3m/wilson-books/blob/main/public/wilson_desktop-gif.gif">
-<div/>
+</div>
   
 <h4>
 :iphone: Mobile
