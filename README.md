@@ -62,7 +62,7 @@ $ git clone https://github.com/jarlei3m/wilson-books
 $ cd wilson-books
 
 # Install dependencies
-$ npm install or yarn
+$ yarn or npm install 
 
 # Run the app
 $ yarn dev or npm run dev
