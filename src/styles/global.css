@@ -38,24 +38,12 @@ a {
     font-size: 87.5%;
   }
 }
-/* 
-@media (max-width: 980px) {
-  html {
-    font-size: 81.25%;
-  }
-} */
 
 @media (max-width: 980px) {
   html {
     font-size: 81.25%;
   }
 }
-/* 
-@media (max-width: 780px) {
-  html {
-    font-size: 62.5%;
-  }
-} */
 
 @media (max-width: 620px) {
   html {
