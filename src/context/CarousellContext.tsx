@@ -25,7 +25,7 @@ interface Books {
   description: string;
   amount: number;
   link: string;
-  price: string;
+  price: number;
   postface: string;
 }
 
