@@ -9,7 +9,7 @@ interface Books {
   smallImage: string;
   image: string;
   link: string;
-  price: string;
+  price: number;
   postface: string;
 }
 
@@ -53,7 +53,13 @@ export function Available() {
                 </a>
                 <div>
                   <h3>{smallTitle}</h3>
-                  <span>R$ {price} + frete</span>
+                  <span>
+                    {new Intl.NumberFormat('pt-BR', {
+                      style: 'currency',
+                      currency: 'BRL',
+                    }).format(price)}{' '}
+                    + frete
+                  </span>
                   <a target='_blank' href={link}>
                     <button>Comprar agora</button>
                   </a>
