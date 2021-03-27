@@ -8,17 +8,23 @@ import { Map } from '../components/Map';
 import { Footer } from '../components/Footer';
 // Context
 import { CarousellProvider } from '../context/CarousellContext';
+import Head from 'next/head';
 
 export default function Home() {
   return (
-    <CarousellProvider>
-      <Books />
-      <Author />
-      <Available />
-      <Depositions />
-      <Contact />
-      <Map />
-      <Footer />
-    </CarousellProvider>
+    <>
+      <Head>
+        <title>wlassalivros</title>
+      </Head>
+      <CarousellProvider>
+        <Books />
+        <Author />
+        <Available />
+        <Depositions />
+        <Contact />
+        <Map />
+        <Footer />
+      </CarousellProvider>
+    </>
   );
 }
