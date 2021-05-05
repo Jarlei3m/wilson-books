@@ -72,7 +72,7 @@ To view the project you can open `http://localhost:3000` on your browser.
 
 ## :sparkles: Technologies
 
-This project was developed for a client who demanded a simple porfolio website but with high performance and good SEO, so I decided to use the following technologies:
+This project was developed with the following technologies:
 
 -  [ReactJS](https://reactjs.org/)
 -  [NextJS](https://nextjs.org/)
