@@ -55,21 +55,21 @@ export function NavBar() {
           }
         >
           <div className={styles.socialLinks}>
-            <li>
-              <ul>
+            <ul>
+              <li>
                 <a
                   target='_blank'
                   href='https://www.facebook.com/profile.php?id=100011729761575'
                 >
                   <FaFacebook />
                 </a>
-              </ul>
-              <ul>
+              </li>
+              <li>
                 <a target='_blank' href='https://www.instagram.com/tlassarote'>
                   <FaInstagram />
                 </a>
-              </ul>
-              <ul>
+              </li>
+              <li>
                 <a
                   target='_blank'
                   href='https://api.whatsapp.com/send?1=pt_BR&phone=5524999616398
@@ -77,13 +77,13 @@ export function NavBar() {
                 >
                   <FaWhatsapp />
                 </a>
-              </ul>
-              <ul>
+              </li>
+              <li>
                 <a href='mailto:wltlassa@bol.com.br'>
                   <HiOutlineMail />
                 </a>
-              </ul>
-            </li>
+              </li>
+            </ul>
           </div>
           <nav
             className={
@@ -105,33 +105,33 @@ export function NavBar() {
             }
           >
             <div className={styles.pageLinks}>
-              <li>
-                <ul className={pageSection === 0 ? `${styles.active}` : null}>
+              <ul>
+                <li className={pageSection === 0 ? `${styles.active}` : null}>
                   <Link href='/#home' replace>
                     Home
                   </Link>
-                </ul>
-                <ul className={pageSection === 1 ? `${styles.active}` : null}>
+                </li>
+                <li className={pageSection === 1 ? `${styles.active}` : null}>
                   <Link href='/#autor' replace>
                     Autor
                   </Link>
-                </ul>
-                <ul className={pageSection === 2 ? `${styles.active}` : null}>
+                </li>
+                <li className={pageSection === 2 ? `${styles.active}` : null}>
                   <Link href='/#livros' replace>
                     Livros
                   </Link>
-                </ul>
-                <ul className={pageSection === 3 ? `${styles.active}` : null}>
+                </li>
+                <li className={pageSection === 3 ? `${styles.active}` : null}>
                   <Link href='/#depoimentos' replace>
                     Depoimentos
                   </Link>
-                </ul>
-                <ul className={pageSection > 3 ? `${styles.active}` : null}>
+                </li>
+                <li className={pageSection > 3 ? `${styles.active}` : null}>
                   <Link href='/#contato' replace>
                     Contato
                   </Link>
-                </ul>
-              </li>
+                </li>
+              </ul>
             </div>
           </div>
         </header>
@@ -139,53 +139,53 @@ export function NavBar() {
         <header className={styles.navbarContainer}>
           <nav className={styles.navbar}>
             <div className={styles.pageLinks}>
-              <li>
-                <ul className={pageSection === 0 ? `${styles.active}` : null}>
+              <ul>
+                <li className={pageSection === 0 ? `${styles.active}` : null}>
                   <Link href='/#home' replace>
                     Home
                   </Link>
-                </ul>
-                <ul className={pageSection === 1 ? `${styles.active}` : null}>
+                </li>
+                <li className={pageSection === 1 ? `${styles.active}` : null}>
                   <Link href='/#autor' replace>
                     Autor
                   </Link>
-                </ul>
-                <ul className={pageSection === 2 ? `${styles.active}` : null}>
+                </li>
+                <li className={pageSection === 2 ? `${styles.active}` : null}>
                   <Link href='/#livros' replace>
                     Livros
                   </Link>
-                </ul>
-                <ul className={pageSection === 3 ? `${styles.active}` : null}>
+                </li>
+                <li className={pageSection === 3 ? `${styles.active}` : null}>
                   <Link href='/#depoimentos' replace>
                     Depoimentos
                   </Link>
-                </ul>
-                <ul className={pageSection > 3 ? `${styles.active}` : null}>
+                </li>
+                <li className={pageSection > 3 ? `${styles.active}` : null}>
                   <Link href='/#contato' replace>
                     Contato
                   </Link>
-                </ul>
-              </li>
+                </li>
+              </ul>
             </div>
             <div className={styles.socialLinks}>
-              <li>
-                <ul>
+              <ul>
+                <li>
                   <a
                     target='_blank'
                     href='https://www.facebook.com/profile.php?id=100011729761575'
                   >
                     <FaFacebook />
                   </a>
-                </ul>
-                <ul>
+                </li>
+                <li>
                   <a
                     target='_blank'
                     href='https://www.instagram.com/tlassarote'
                   >
                     <FaInstagram />
                   </a>
-                </ul>
-                <ul>
+                </li>
+                <li>
                   <a
                     target='_blank'
                     href='https://api.whatsapp.com/send?1=pt_BR&phone=5524999616398
@@ -193,13 +193,13 @@ export function NavBar() {
                   >
                     <FaWhatsapp />
                   </a>
-                </ul>
-                <ul>
+                </li>
+                <li>
                   <a href='mailto:wltlassa@bol.com.br'>
                     <HiOutlineMail />
                   </a>
-                </ul>
-              </li>
+                </li>
+              </ul>
             </div>
           </nav>
         </header>
